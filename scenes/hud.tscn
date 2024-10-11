@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://o3dp0ipprcbv"]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_0p25j"]
+[ext_resource type="Texture2D" uid="uid://bj4j1wlj7c7gl" path="res://assets/Items/Fruits/AppleDisplay.png" id="1_bb4ok"]
+[ext_resource type="FontFile" uid="uid://cdywny1i1c422" path="res://assets/font/PixelOperator.ttf" id="1_h2135"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_0p25j")
+
+[node name="coincount" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = -0.0763889
+offset_left = 1027.0
+offset_top = 43.0
+offset_right = 1055.0
+offset_bottom = 107.0
+theme_override_fonts/font = ExtResource("1_h2135")
+theme_override_font_sizes/font_size = 64
+text = "0"
+horizontal_alignment = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="AppleDisplay" type="Sprite2D" parent="."]
+position = Vector2(1091, 71)
+scale = Vector2(4.56667, 4.33333)
+texture = ExtResource("1_bb4ok")

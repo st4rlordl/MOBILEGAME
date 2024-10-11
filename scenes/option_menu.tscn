@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://sshbwlsa2gbq"]
+
+[ext_resource type="Script" path="res://scripts/option_menu.gd" id="1_qysgr"]
+[ext_resource type="Texture2D" uid="uid://yffmwaldlcon" path="res://assets/Background/Pink.png" id="2_0nvka"]
+[ext_resource type="Texture2D" uid="uid://ch67x3cc2kqjg" path="res://assets/Menu/Buttons/Play.png" id="2_q8o3x"]
+[ext_resource type="Texture2D" uid="uid://yiamx4mjqqu0" path="res://assets/Menu/Buttons/Back.png" id="3_c2f1q"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qysgr")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_0nvka")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -10.5
+offset_top = 150.0
+offset_right = 10.5
+offset_bottom = 192.0
+grow_horizontal = 2
+scale = Vector2(3, 3)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Play" type="TextureButton" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_q8o3x")
+stretch_mode = 3
+
+[node name="ReturnMenu" type="TextureButton" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("3_c2f1q")
+stretch_mode = 3
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ReturnMenu" to="." method="_on_setting_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ReturnMenu" to="." method="_on_return_menu_pressed"]

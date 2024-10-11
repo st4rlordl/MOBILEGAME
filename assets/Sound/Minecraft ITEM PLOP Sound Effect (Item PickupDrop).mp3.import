@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dr213ukkgpffj"
+path="res://.godot/imported/Minecraft ITEM PLOP Sound Effect (Item PickupDrop).mp3-2963320b738832b6f5ad3d51cbf0214c.mp3str"
+
+[deps]
+
+source_file="res://assets/Sound/Minecraft ITEM PLOP Sound Effect (Item PickupDrop).mp3"
+dest_files=["res://.godot/imported/Minecraft ITEM PLOP Sound Effect (Item PickupDrop).mp3-2963320b738832b6f5ad3d51cbf0214c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
